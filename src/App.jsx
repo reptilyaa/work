@@ -11,7 +11,9 @@ import i from "./img/Frame 3580.svg"
 import i2 from "./img/Frame 3580 (1).svg"
 import i3 from "./img/Frame 3580 (2).svg"
 import i4 from "./img/Frame 3580 (3).svg"
-
+import but from "./img/Button.svg"
+import but1 from "./img/Button (1).svg"
+import gr from "./img/Group 2.svg"
 
 function App() {
   return (
@@ -104,13 +106,46 @@ function App() {
         <p>Women - Must Haves</p>
       </div>
     
-      <div className='box justify-center  items-start align-middle text-center flex'>
+      <div className='box justify-between flex'>
+        <img src={but} alt="" className="mt-[60px]"/>
+        <div className="">
         <img src={i} alt="i"  center />
+        <div className="flex justify-between">
+        <p>Basic Shirt</p>
+        <p>€49</p>
+        </div>
+        </div>
+        <div className="">
         <img src={i2} alt="i2"  center />
+        <div className="flex justify-between">
+          <p>Beige Jumper</p>
+          <p>€99</p>
+        </div>
+        </div>
+        <div className="">
         <img src={i3} alt="i3"  center />
+        <div className="flex justify-between">
+          <p>Signature Jacket</p>
+          <p>€249</p>
+        </div>
+        </div>
+        <div className="">
         <img src={i4} alt="i4"  center />
+        <div className="flex justify-between">
+          <p>Navy Jumper</p>
+          <p>€45</p>
+        </div>
+        </div>
+        <img src={but1} alt="" className="mt-[60px]" />
       </div>
-
+      <div className="">
+        <div className="justify-center flex mt-10 text-[50px]">
+          <p>We always have your back</p>
+        </div>
+        <div className="">
+          <button className="bg-black text-[25px] text2 px-4 py-4 rounded">Made in Portugal <br/>With hand finished details</button>
+        </div>
+      </div>
       </div>
   );
 }
